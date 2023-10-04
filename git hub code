@@ -1,0 +1,53 @@
+
+cgc@DESKTOP-PMPO9K0 MINGW64 ~
+$ cd demo
+
+cgc@DESKTOP-PMPO9K0 MINGW64 ~/demo (master)
+$ touch b.txt
+
+cgc@DESKTOP-PMPO9K0 MINGW64 ~/demo (master)
+$ git add b.txt
+
+cgc@DESKTOP-PMPO9K0 MINGW64 ~/demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a.txt
+        new file:   b.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text/
+
+
+cgc@DESKTOP-PMPO9K0 MINGW64 ~/demo (master)
+$ git add b
+fatal: pathspec 'b' did not match any files
+
+cgc@DESKTOP-PMPO9K0 MINGW64 ~/demo (master)
+$ git init samarth
+Initialized empty Git repository in C:/Users/cgc/demo/samarth/.git/
+
+cgc@DESKTOP-PMPO9K0 MINGW64 ~/demo (master)
+$ git clone ^[[200~https://github.com/samarth1229/first.git~
+Cloning into 'first.git~'...
+fatal: protocol '?[200~https' is not supported
+
+cgc@DESKTOP-PMPO9K0 MINGW64 ~/demo (master)
+$ git clone https://github.com/samarth1229/first.git
+Cloning into 'first'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (7/7), done.
+
+cgc@DESKTOP-PMPO9K0 MINGW64 ~/demo (master)
+$ ^C
+
+cgc@DESKTOP-PMPO9K0 MINGW64 ~/demo (master)
+$
